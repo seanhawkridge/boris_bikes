@@ -1,12 +1,21 @@
-require "Bike.rb"
+require "./lib/Bike.rb"
 
 class DockingStation
 
-  # def initialize
-  #   @new_bike = nil
-  # end
+  attr_reader :bike
+
+  def initialize
+
+  end
+
   def release_bike
       Bike.new
   end
+
+  def dock(bike)
+    @bike = bike
+  end
+
+
 
 end
